@@ -1,85 +1,57 @@
-ZT Calculator
+# ZT Calculator
 
-ZT Calculator is a modern, sleek Python calculator built with PySide6. It’s designed for both everyday use and professional calculations, combining an elegant UI with advanced functionality.
+**ZT Calculator** is a modern, sleek Python calculator built with **PySide6**. Designed for both everyday use and professional calculations, it combines an elegant UI with advanced functionality.
 
-Features
+**Owner:** Zytra_GAP
 
-Home & Pro Modes:
+---
 
-Home: Basic arithmetic operations for daily use.
+## Features
 
-Pro: Advanced operations like powers, roots, parentheses, and π.
+- **Home & Pro Modes**: Basic and advanced operations
+- **Profile & Personalization**: Set your name, choose mode, switch Light/Dark themes
+- **History Panel**: Track all past calculations
+- **Modern macOS-inspired UI**: Draggable window with colored buttons
+- **Sound Effects**: Interactive click sounds
+- **Keyboard Support**: Type numbers and operations directly
+- **Responsive Design**: Works on different screen resolutions
 
-Profile & Personalization: Set your name, choose mode, switch between Light and Dark themes.
+---
 
-History Panel: Collapsible, scrollable panel to track all calculations.
+## Installation & Usage
 
-Modern macOS-inspired UI: Draggable window with color-coded control buttons.
-
-Sound Effects: Interactive click sounds.
-
-Keyboard Support: Full typing support for numbers and operations.
-
-Responsive Design: Works on multiple screen resolutions.
-
-Installation
-
-Make sure you have Python 3.11+ installed.
-
-Install required packages:
+1. **Install Python 3.11+** if you don’t have it.
+2. **Install required packages**:
 
 pip install PySide6
+Download or clone the repository:
 
-
-Clone this repository:
-
+Copy code
 git clone https://github.com/yourusername/ZT-Calculator.git
 cd ZT-Calculator
+Run the program using Python:
 
-
-Make sure the assets/click.wav file exists for button sounds.
-
-Running the App
+Copy code
 python main.py
+OR open the pre-built executable:
 
+On Windows, double-click main.exe inside the dist/ folder.
 
-Use Home mode for basic calculations.
+On Linux, give execute permission first and run:
 
-Switch to Pro mode for scientific calculations.
-
-Click the 👤 avatar to open the profile panel.
-
-Access History via the side panel.
-
-Use keyboard or mouse clicks to input numbers and operations.
-
-Building an Executable (.exe)
-
-To share ZT Calculator with users without Python:
-
-Install PyInstaller:
-
-pip install pyinstaller
-
-
-Build the executable:
-
-pyinstaller --onefile --windowed main.py
-
-
-The --onefile flag creates a single .exe file.
-
-The --windowed flag prevents a console window from opening.
-
-The output .exe will be in the dist/ folder.
+Copy code
+chmod +x dist/main
+./dist/main
+Make sure the assets folder (with click.wav) is in the same directory as the executable for proper sound effects.
 
 Usage Tips
+Click the 👤 avatar to open the Profile panel.
 
-Profile Panel: Disable/enable buttons when open/closed.
+Switch between Home and Pro modes for basic or scientific calculations.
 
-History Panel: Tracks all past calculations; use for review.
+Use the History panel to review past calculations.
 
-Keyboard Shortcuts:
+Keyboard shortcuts:
 
 Backspace → DEL
 
@@ -87,10 +59,28 @@ Enter → =
 
 Escape → AC
 
-Screenshots
+Building Executable (.exe)
+To share ZT Calculator with users without Python:
 
-(Here you can add some screenshots of your app in Home/Pro mode, profile panel, and history panel.)
+Install PyInstaller:
+
+Copy code
+pip install pyinstaller
+Build the executable:
+
+Copy code
+pyinstaller --onefile --windowed main.py
+The --onefile flag creates a single .exe file.
+
+The --windowed flag prevents a console window from opening.
+
+On Linux, include assets like this:
+
+Copy code
+pyinstaller --onefile --windowed --add-data "assets/click.wav:assets" main.py
+Output .exe (or executable) will be in the dist/ folder.
 
 License
-
 This project is licensed under the MIT License – feel free to use, modify, and distribute.
+
+Owner: Zytra_GAP
