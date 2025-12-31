@@ -27,7 +27,7 @@ pip install PySide6
 Download or clone the repository:
 
 Copy code
-git clone https://github.com/yourusername/ZT-Calculator.git
+git clone https://github.com/Zytra-App/ZT-Calculator.git
 cd ZT-Calculator
 Run the program using Python:
 
